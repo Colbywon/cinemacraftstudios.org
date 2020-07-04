@@ -68,3 +68,9 @@ li.dropdown {
 article {
   text-align: center;
 }
+.sexy_line {
+    margin: 25px 0;
+    height: 1px;
+    background: white;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+}
