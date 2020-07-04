@@ -10,7 +10,7 @@ h2{
 size: 40px;
 
 }
-class navbar {
+
   ul {
   position: fixed;
   top: 0;
@@ -66,5 +66,4 @@ li.dropdown {
 }
 .active {
   background-color: #4CAF50;
-}
 }
