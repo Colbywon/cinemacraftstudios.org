@@ -72,15 +72,4 @@ article {
     margin: 25px 0;
     height: 1px;
     background: white;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(#333), to(#333), color-stop(50%, white));
-}
-.light-mode{
-  background-color: white;
-  color: black;
-}
-.light-mode .sexy_line{
-  margin: 25px 0;
-  height: 1px;
-  background: black;
-  background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, #333));
-}
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#333), to(#333), color-stop(50%, #f2f2f2));
