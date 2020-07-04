@@ -17,6 +17,9 @@ footer {
    bottom: 0;
    width: 100%;
 }
+.p {
+  size: 12;
+}
 ul {
   position: fixed;
   top: 0;
