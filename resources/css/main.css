@@ -84,7 +84,6 @@ article {
 }
 
 .sexy_line {
-  margin: 25px 0;
   height: 1px;
   background: white;
   background: -webkit-gradient(linear, 0 0, 100% 0, from(#333), to(#333), color-stop(50%, #999999));
