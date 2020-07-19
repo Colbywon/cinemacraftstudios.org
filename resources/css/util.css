@@ -1,0 +1,27 @@
+.floatRight {
+  float: right;
+  margin-left: 20px
+}
+
+.floatLeft {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px
+}
+
+article {
+  width: 60%;
+  text-align: left;
+}
+
+.bold {
+   font-weight: bold;
+}
+
+.question {
+  font-style:italic;
+}
+.answer {
+  /* TODO: change with color scheme(dark/light)? */
+  color: lightblue;
+}
