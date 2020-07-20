@@ -18,6 +18,10 @@ article {
    font-weight: bold;
 }
 
+.note {
+  font-style:italic;
+}
+
 .question {
   font-style:italic;
 }
