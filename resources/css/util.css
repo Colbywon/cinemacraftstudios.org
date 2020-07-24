@@ -26,3 +26,9 @@
   /* TODO: change with color scheme(dark/light)? */
   color: lightblue;
 }
+
+span a, span a:hover, span a:visited {
+  /*text-decoration: none;*/
+  font-weight: bold;
+  color: lightblue;
+}
