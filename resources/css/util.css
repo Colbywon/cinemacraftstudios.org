@@ -9,17 +9,14 @@
   margin-right: 10px
 }
 
-article {
+.leftBoundArticle {
   width: 60%;
   text-align: left;
+  margin-left: 2%;
 }
 
 .bold {
    font-weight: bold;
-}
-
-.note {
-  font-style:italic;
 }
 
 .question {

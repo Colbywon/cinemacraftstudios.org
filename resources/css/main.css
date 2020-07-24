@@ -28,14 +28,27 @@ ul {
 li {
   float: left;
 }
+
 li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 1em
 }
-li a:hover, .dropdown:hover .dropbtn {
+
+/*@media screen and (orientation:portrait) {*/
+  li a, .dropbtn {
+    font-size: 2em;
+  }
+
+  li a.smallTab {
+    padding: 12px 15px 2px;
+  }
+/*}*/
+
+li a:hover, .dropdown:hover .dropbtn, .active {
   background-color: red;
 }
 li.dropdown {
@@ -63,7 +76,7 @@ li.dropdown {
   display: block;
 }
 .active {
-  background-color: #4CAF50;
+  background-color: #D00909;
 }
 article {
   text-align: center;

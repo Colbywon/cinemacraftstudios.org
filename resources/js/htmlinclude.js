@@ -25,3 +25,9 @@ function includeHTML() {
     }
   }
 }
+function showActiveTab() {
+  document.getElementById(activeTab).classList.add('active');
+}
+
+setTimeout(function() { showActiveTab(); }, 50);
+setTimeout(function() { showActiveTab(); }, 500); //If the browser is too slow

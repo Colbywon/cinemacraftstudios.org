@@ -1,9 +1,12 @@
 <header>
-  <ul>
-    <li><a href="home"><img src="resources\images\logo-white.PNG" width="20"></a></li>
-    <li><a href="donations">Donations</a></li>
-    <li><a href="our-mission">Our Mission</a></li>
-    <li><a href="rots-trailer">Rots Trailer</a></li>
-    <li><a href="progress">Progress</a></li>
+  <ul id='header-list'>
+    <li><a id="home" href="home" class="smallTab"><img src="resources\images\logo-white.PNG" width="50vw"></a></li>
+    <li><a id="donations"  href="donations">Donations</a></li>
+    <li><a id="mission"  href="our-mission">Our Mission</a></li>
+    <li><a id="trailer"  href="rots-trailer">Rots Trailer</a></li>
+    <li><a id="progress"  href="progress">Progress</a></li>
   </ul>
+  <script>
+    document.getElementById(activeTab).classList.add('active')
+  </script>
 </header>
