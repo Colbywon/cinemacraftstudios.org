@@ -1,0 +1,14 @@
+<head>
+<title>404</title>
+<meta charset="utf-8">
+<script src="resources\js\htmlinclude.js"></script>
+<link rel='icon' href='resources\images\logo-white.ico' type='image/x-icon' />
+<link rel='stylesheet' href="resources\css\main.css" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Quantico&display=swap" rel="stylesheet">
+</head>
+<body>
+<img src="images/404.jfif">
+<h1>Um, that wasn't supposedto happen.</h1>
+<h2>If there's supposed to be somthing here, contact us at <a href="mailto:sewance@cinemacraftstudios.org" target="_blank">sewance@cinemacraftstudios.org</a>.</h2>
+<h2>press <a href="home">HERE</a> to return to the homepage
+</body>
