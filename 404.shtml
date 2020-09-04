@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css?family=Quantico&display=swap" rel="stylesheet">
 </head>
 <body>
-<img src="images/404.jpg">
+<img src="resources/images/404.jpg">
 <h1 style="text-align:center">Um, that wasn't supposed to happen. [404 error]</h1>
 <h2 style="text-align:center">If there's supposed to be somthing here, contact us at <a href="mailto:sewance@cinemacraftstudios.org" target="_blank">sewance@cinemacraftstudios.org</a>.</h2>
 <h2 style="text-align:center">press <a href="home">HERE</a> to return to the homepage
