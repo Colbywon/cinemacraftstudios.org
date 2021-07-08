@@ -1,6 +1,7 @@
 body {
   font-family: 'Quantico', sans-serif;
   background-image: url('../images/stars.png');
+  color: white;
 }
 h1 {
   size: 50px;
@@ -79,7 +80,7 @@ li.dropdown {
 }
 
 #credits {
-  padding-top: 30vh;
+  padding-top: 9vh;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
