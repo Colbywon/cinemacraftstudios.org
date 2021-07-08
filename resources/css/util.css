@@ -32,3 +32,8 @@ span a, span a:hover, span a:visited {
   font-weight: bold;
   color: lightblue;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  }
