@@ -1,6 +1,7 @@
 body {
   font-family: 'Quantico', sans-serif;
   background-image: url('../images/stars.png');
+  background-attachment: fixed;
   color: white;
   z-index: 1;
 }
