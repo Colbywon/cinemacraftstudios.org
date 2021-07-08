@@ -6,17 +6,23 @@
         <script src="..\resources\js\htmlinclude.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <link rel='icon' href='..\resources\images\logo-white.ico' type='image/x-icon' />
-        <link rel='stylesheet' href="..\resources\css\main.css" type="text/css" />
+        <link rel='stylesheet' href="..\resources\css\credits.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Quantico&display=swap" rel="stylesheet">
         <title>Cinemacraft Studios|Credits</title>
     </head>
 
+    
     <body>
         <div inclusion="../header"></div>
-        
+            
         <div id="credits">
-            <div v-for="todo in todos">
-                <p>{{todo.text}}</p>
+            <div v-for="job in jobs">
+                <p style="float: left;">{{job.job}}</p>
+                <div class="list" style="float: right;">
+                    <div v-for="p in job.people">
+                        <p >{{p}}</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -32,10 +38,10 @@
         var app4 = new Vue({
             el: '#credits',
             data: {
-                todos: [
-                { text: 'Learn JavaScript' },
-                { text: 'Learn Vue' },
-                { text: 'Build something awesome' }
+                jobs: [
+                    { job: 'Directed by', people: ['Sewance', 'Noah S.', 'NotFarFromACube'] },
+                    { job: 'Additional Managment', people: ['Sewance', 'Noah S.', 'NotFarFromACube'] },
+                    { job: 'Builders', people: ['Tanja', 'Rosoko', "Meril", 'Hank', 'Noah S.', 'NotFarFromACube'] }
                 ]
             }
             })

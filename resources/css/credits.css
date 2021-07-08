@@ -1,7 +1,6 @@
 body {
   font-family: 'Quantico', sans-serif;
-  background-color: #333;
-  color: white;
+  background-image: url('../images/stars.png');
 }
 h1 {
   size: 50px;
@@ -84,10 +83,14 @@ li.dropdown {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: column;;
 }
 
 #credits p {
   color: #0680F8;
+  margin-top: 5%;
+  padding-top: 0%;
 }
 
 article {
@@ -103,4 +106,14 @@ footer {
 }
 a {
   color: red;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;;
+}
+
+.list div p{
+  padding-left: 35%;
+  margin-top: 5%;
 }
