@@ -2,6 +2,7 @@ body {
   font-family: 'Quantico', sans-serif;
   background-image: url('../images/stars.png');
   color: white;
+  z-index: 1;
 }
 h1 {
   size: 50px;
@@ -14,6 +15,10 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+}
+header {
+  position:fixed;
+    z-index:1;
 }
 ul {
   position: fixed;
