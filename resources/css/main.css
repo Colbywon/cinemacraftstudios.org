@@ -39,14 +39,14 @@ li a, .dropbtn {
 }
 
 .center-video {
-  width: 95vw;
-  height: 95vw * 0.5625;
+  width: 90vw;
+  height: 50vw;
 }
 
 @media screen and (orientation:landscape) {
   .center-video {
-    height: 60vh;
-    width: 60vh * 1.7778;
+    height: 50vh;
+    width: 90vh;
   }
 }
 
