@@ -39,12 +39,12 @@ li a, .dropbtn {
 }
 
 .center-video {
-  width: 95%;
+  width: 95vmin;
 }
 
 @media screen and (orientation:landscape) {
   .center-video {
-    height: 60%;
+    height: 60vh;
     width: auto;
   }
 }
