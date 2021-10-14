@@ -38,6 +38,17 @@ li a, .dropbtn {
   font-size: 1em
 }
 
+.center-video {
+  width: 95%;
+}
+
+@media screen and (orientation:landscape) {
+  .center-video {
+    height: 60%;
+    width: auto;
+  }
+}
+
 /*@media screen and (orientation:portrait) {*/
   li a, .dropbtn {
     font-size: 2em;
