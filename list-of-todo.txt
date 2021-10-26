@@ -1,6 +1,4 @@
 -better movability
 -a light and dark mode
--a contact email
 -info page
--trailer page
 -sign in for our own ideas
