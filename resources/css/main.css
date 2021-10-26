@@ -38,6 +38,18 @@ li a, .dropbtn {
   font-size: 1em
 }
 
+.center-video {
+  width: 90vw;
+  height: 50vw;
+}
+
+@media screen and (orientation:landscape) {
+  .center-video {
+    height: 50vh;
+    width: 90vh;
+  }
+}
+
 /*@media screen and (orientation:portrait) {*/
   li a, .dropbtn {
     font-size: 2em;
