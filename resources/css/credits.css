@@ -87,6 +87,7 @@ li.dropdown {
 
 #credits {
   padding-top: 9vh;
+  padding-bottom: 30vh;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
@@ -120,7 +121,13 @@ a {
   flex-direction: column;;
 }
 
+.list div {
+  text-align: left;
+  width: 350%;
+}
+
 .list div p{
   padding-left: 35%;
   margin-top: 5%;
+  text-align: left;
 }
