@@ -4,10 +4,10 @@ body {
   color: white;
 }
 h1 {
-  size: 50px;
+  font-size: 4em;
 }
 h2 {
-  size: 40px;
+  font-size: 2em;
 }
 footer {
   position: fixed;
@@ -39,8 +39,8 @@ li a, .dropbtn {
 }
 
 .center-video {
-  width: 90vw;
   height: 50vw;
+  width: 90vw;
 }
 
 @media screen and (orientation:landscape) {
