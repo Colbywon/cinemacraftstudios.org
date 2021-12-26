@@ -40,4 +40,4 @@ new Vue({
 const width = window.innerWidth
     || document.documentElement.clientWidth
     || document.body.clientWidth;
-if(width > 900) window.scrollTo(0, 100)
+if(width > 900 && window.location.hash == '') window.scrollTo(0, 100)

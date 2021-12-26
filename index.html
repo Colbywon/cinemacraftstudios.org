@@ -116,8 +116,10 @@
           <div class="card-body">
             <p class="card-text"> {{p.description}} </p>
             <div class="d-grid gap-2 d-md-block">
-              <button class="btn btn-outline-primary" type="button">Discord</button>
-              <button class="btn btn-outline-primary" type="button">Mail</button>
+              <a class="btn btn-outline-primary" href="https://discord.gg/KhhfSxR" type="button">Discord</a>
+              <a class="btn btn-outline-primary"
+                 :href="'mailto:sewance@cinemacraftstudios.org?subject=Application as ' + p.name"
+                 type="button">Mail</a>
             </div>
           </div>
         </div>
@@ -129,9 +131,10 @@
     <div style="margin-left: 2vw;">
       <p>© 2020 Cinemacraft Studios</p>
       <a class="fa fa-youtube"    href="https://www.youtube.com/channel/UCmr6tSNmwZpdAx6nR2MwJqg"></a>
-      <a class="fa fa-twitter"    href="#"></a>
-      <a class="fa fa-instagram"  href="#"></a>
-      <a class="fa fa-reddit"     href="#"></a>
+      <a href="https://discord.gg/KhhfSxR" target="_blank" class="dc"><img src="img/discord-logo.webp" class="dc" width="35"></a>
+      <a class="fa fa-twitter"    href="https://twitter.com/rotsinminecraft"></a>
+      <a class="fa fa-instagram"  href="https://www.instagram.com/minecraftrots/"></a>
+      <a class="fa fa-reddit"     href="https://reddit.com/r/cinemacraftstudios"></a>
       <p>
         Questions? Concerns? Contact us at
         <a href="mailto:sewance@cinemacraftstudios.org" target="_blank">sewance@cinemacraftstudios.org</a>!

@@ -20,6 +20,11 @@ body {
     color: white;
 }
 
+.dc {
+    padding-bottom: 6px;
+    box-sizing: content-box;
+}
+
 .fa-facebook {
     background: #3B5998;
     color: white;
@@ -36,7 +41,7 @@ body {
 }
 
 .fa-instagram {
-    background: #125688;
+    background-image: linear-gradient(to bottom right, #405DE6, #833AB4, #E1306C, #F56040, #FCAF45, #FFDC80);
     color: white;
 }
 
