@@ -2,40 +2,128 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <script src="resources\js\htmlinclude.js"></script>
-  <link rel='icon' href='resources\images\logo-white.ico' type='image/x-icon' />
-  <link rel='stylesheet' href="resources\css\main.css" type="text/css" />
-  <link rel='stylesheet' href="resources\css\util.css" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Quantico&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="img\logo-white.ico" type="image/x-icon">
   <title>Cinemacraft Studios|Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ToDo Update/development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
 </head>
 
-<body>
-<div inclusion="header"></div>
-  <br>
-  <br>
-  <article class="floatLeft leftBoundArticle">
-    <h1>Hello there!</h1>
-    <p>We - the CinemaCraft Studios  - are creating machinimas in minecraft.
-      Our focus is on Star Wars and especially the prequels. At this moment we are working
-      on a parody of <span class="bold">Star Wars - Revenge of the Sith</span> - or 
-      rather a recreation with a few extra jokes.
-      <br><br>
-      <span class="question"> How can i help?</span><br>
-      <span class="answer">  Just <a class="undercoverLink" href="https://discord.gg/KhhfSxR" target="_blank">join our discord</a> - there you can select how you want
-         to help. You can build, help editing, create skins, join our 'PR Department' or just wait for updates.</span>
-      <br><br>
-      <span class="question"> Where can i find some more information?</span><br>
-      <span class="answer"> Take a closer look at the other tabs and <a href="https://discord.gg/KhhfSxR" target="_blank">join our discord</a></span> 
-      - there you can ask any questions you may have.<br>
-    </p>
-  </article>
-  <img src="resources\images\rots-poster.jpg" height="400" class="floatRight">
-  <div inclusion="footer"></div>
-  <script>
-    var activeTab = 'home';
-    includeHTML();
-  </script>
+<body style="padding-top:80px">
+  <header id="navbar">
+  <nav class="navbar fixed-top navbar-expand navbar-dark bg-dark shadow"  id="main_nav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link"
+             href="#our-mission">Our Mission</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             href="#trailer">Trailer</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="" href="#"
+             aria-current="page">
+            <img class="img-fluid" style="max-width: 40%; margin-left: 40%" src="img/logo-white.PNG"
+                width="120" height="120"/>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             href="#jobs">Jobs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             href="#social">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             href="#social">Contact</a>
+        </li>
+      </ul>
+  </nav>
+</header>
+  <main>
+    <h1 class="text-center">CinemaCraft Studios</h1>
+    <div id="c_showcase" class="carousel slide w-75 mx-auto" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#c_showcase" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#c_showcase" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#c_showcase" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#c_showcase" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <carousel title="Invisible Hand"    info="Create amazing builds" img="img/intro/building-i.png" active="true"></carousel>
+        <carousel title="Palpatines Office" info="Re-Visualize George Lucas Vision" img="img/intro/vfx-l.png"></carousel>
+        <carousel title="Mustafar"          info="Recreate entire worlds in our building department" img="img/intro/building-m.png"></carousel>
+        <carousel title=""                  info="" img="img/intro/ccs.png"></carousel>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#c_showcase" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#c_showcase" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br>
+    <section id="our-mission" class="row col-9 mx-auto">
+      <h1 class="text-center my-5">Our Mission</h1>
+      <article class="col-6">
+        <h2>Recreating Revenge Of The Sith In Minecraft.</h2>
+        <p>
+          Or a little bit more detailed: our mission is to bring the excellent work that George Lucas has done into minecraft.
+          Our first target is to recreate <span class="fw-bold">Star Wars - Revenge of the Sith</span> and translate it into minecraft.
+          We don't plan to do this as an animation(blender, cinema4d, etc.) but rather in-game. Everything will be recorded in minecraft
+          and then edited - so the space ships are flying, the blaster actually shoots and so on.
+          But before we do that we are creating a trailer as an proof of concept and effect test ... and a star wars trailer in
+          minecraft itself is already pretty cool. If you want to keep up-to-date or even help you can use the links below.
+          <br>
+        </p>
+        <div class="alert alert-warning" role="alert">
+          Note that discord is the main social media presence and where we organize everything
+        </div>
+      </article>
+      <div class="col-1"></div>
+      <div class="col-3 float-right shadow">
+        <img src="img/rots-poster.jpg">
+      </div>
+    </section>
+
+    <section id="trailer" class="col-8 mx-auto">
+      <h1 class="text-center my-5">Our Trailer</h1>
+      <div class="ratio ratio-16x9">
+        <iframe class="shadow" src="https://www.youtube.com/embed/yQ6z7X7Rotc" title="YouTube video" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section id="jobs" class="col-10 mx-auto">
+      <h1 class="text-center my-5">Open Positions</h1>
+      <div id="cards">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">
+            VFX Artist
+          </div>
+          <div class="card-body">
+            <p class="card-text">He do be doing VFX</p>
+            <a href="#" class="btn btn-outline-primary">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="custom-components.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
