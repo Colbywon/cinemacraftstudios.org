@@ -13,19 +13,19 @@ new Vue({el: '#c_showcase'});
 new Vue({
     el: '#cards',
     data: {
-        positions: [{name: "Writer", tag: "Few",
+        positions: [{name: "Writer", tag: "",
                     description: "We don't want to just change the visual style. Transferring something into " +
                         "minecraft needs more than that. What exactly does that mean? That's on you."},
-                    {name: "Blockbuster Expert", tag: "Few",
+                    {name: "Blockbuster Expert", tag: "",
                         description: "You'll decorate sets with extras and model blocks with the help of " +
                             "the blockbuster mod. With this great creative freedom comes great responsibility."},
-                    {name: "Modeller", tag: "",
+                    {name: "Modeller", tag: "Blender/Blockbench",
                         description: "We don't want to just change the visual style. Transferring something into " +
                             "minecraft needs more than that. What exactly does that mean? That's on you."},
                     {name: "VFX Artist/Editor",
-                        description: "Even though our builders and _____ try their best to build an immersive world" +
+                        description: "Even though our builders and Blockbuster Experts try their best to build an immersive world" +
                             " we need to add even more in post to finish of a video."},
-                    {name: "Builder",
+                    {name: "Builder", tag: "Java/PE",
                         description: "Our building department recreates entire worlds block-by-block. " +
                             "Show us your creativity and become a CinemaCraft Builder."},
                     {name: "Voice Actor",
