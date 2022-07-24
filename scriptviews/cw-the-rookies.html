@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="img\logo-white.ico" type="image/x-icon">
+  <title>Cinemacraft Studios|The Rookies Script</title>
+
+  <link href="../resources/css/fountain//normalize.min.css" rel="stylesheet">
+  <link href="../resources/css/fountain/fountain.css" rel="stylesheet">
+</head>
+
+<body id="fountain-js">
+    <section id="workspace" style="display: block;">
+        <div id="script" class="us-letter dpi100">
+            <div id='title'   class="page title-page"></div>
+            <div id='content' class="page"></div>
+        </div>
+    </section>
+    
+    <script type="text/javascript" src="../resources/js/fountain.js"></script>
+    <script type="text/javascript">
+        var output;
+        const URL = 'https://raw.githubusercontent.com/CCS-GH/public-scripts/main/sw-cw-epr-rookies.fountain';
+
+        fetch(URL)
+        .then(res => res.text())
+        .then(text => {
+            output = fountain.parse(text);
+            document.getElementById('title').innerHTML = output.html.title_page;
+            document.getElementById('content').innerHTML = output.html.script;
+        })
+        .catch(err => console.log(err));
+        /**
+         * ToDo: Add in footer
+         * Special thanks to Matthew Daly
+         * for providing a fountain parser and styling
+         * [https://github.com/mattdaly/Fountain.js]
+         **/
+    </script>
+</body>
+</html>
