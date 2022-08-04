@@ -11,13 +11,14 @@
       scene_heading: /^((?:\*{0,3}_?)?(?:(?:int|ext|est|i\/e)[. ]).+)|^(?:\.(?!\.+))(.+)/i,
       scene_number: /( *#(.+)# *)/,
   
-      transition: /^((?:FADE (?:TO BLACK|OUT)|CUT TO BLACK)\.|.+ TO\:)|^(?:> *)(.+)/,
+      transition: /^((?:FADE (?:TO BLACK|OUT)|CUT TO BLACK)\.|.+ TO\:)(.+|)|^(?:> *)(.+)/,
       
       dialogue: /^([A-Z*_]+[0-9A-Z (._\-')]*)(\^?)?(?:\n(?!\n+))([\s\S]+)/,
       parenthetical: /^(\(.+\))$/,
   
       action: /^(.+)/g,
       centered: /^(?:> *)(.+)(?: *<)(\n.+)*/g,
+      vfx: /^>(.+)</g,
           
       section: /^(#+)(?: *)(.*)/,
       synopsis: /^(?:\=(?!\=+) *)(.*)/,
@@ -48,7 +49,9 @@
       return script.replace(regex.boneyard, '\n$1\n')
                    .replace(regex.standardizer, '\n')
                    .replace(regex.cleaner, '')
-                   .replace(regex.whitespacer, '');
+                   .replace(regex.whitespacer, '')
+                   .replace(/(CUT TO: (.+))/g, '\n\n$1\n')
+                   .replace(/(> (.+))/g, '\n\n$1\n');
     };
        
     var tokenize = function (script) {
@@ -58,7 +61,7 @@
   
       while (i--) {
         line = src[i];
-        
+
         // title page
         if (regex.title_page.test(line)) {
           match = line.replace(regex.title_page, '\n$1').split(regex.splitter).reverse();
@@ -73,13 +76,11 @@
         if (match = line.match(regex.scene_heading)) {
           text = match[1] || match[2];
   
-          if (text.indexOf('  ') !== text.length - 2) {
-            if (meta = text.match(regex.scene_number)) {
-              meta = meta[2];
-              text = text.replace(regex.scene_number, '');
-            }
-            tokens.push({ type: 'scene_heading', text: text, scene_number: meta || undefined });
+          if (meta = text.match(regex.scene_number)) {
+            meta = meta[2];
+            text = text.replace(regex.scene_number, '');
           }
+          tokens.push({ type: 'scene_heading', text: text, scene_number: meta || undefined });
           continue;
         }
   
@@ -88,10 +89,16 @@
           tokens.push({ type: 'centered', text: match[0].replace(/>|</g, '') });
           continue;
         }
+
+        // VFX
+        if (match = line.match(regex.vfx)) {
+          tokens.push({ type: 'centered', text: match[0] });
+          continue;
+        }
   
         // transitions
         if (match = line.match(regex.transition)) {
-          tokens.push({ type: 'transition', text: match[1] || match[2] });
+          tokens.push({ type: 'transition', text: (match[1] + match[2]) || match[3]});
           continue;
         }
       
@@ -165,7 +172,7 @@
   
         tokens.push({ type: 'action', text: line });
       }
-  
+      
       return tokens;
     };
   
