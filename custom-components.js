@@ -20,11 +20,11 @@ new Vue({
                         description: "You'll decorate sets with extras and model blocks with the help of " +
                             "the blockbuster mod. With this great creative freedom comes great responsibility."},
                     {name: "Modeller", tag: "Blender/Blockbench",
-                        description: "We don't want to just change the visual style. Transferring something into " +
-                            "minecraft needs more than that. What exactly does that mean? That's on you."},
+                        description: "Not everything in Star Wars can be recreated with things that already exist in minecraft. " +
+                            "Some characters and items need some more creative freedom - model them in your program of choice!"},
                     {name: "VFX Artist/Editor",
                         description: "Even though our builders and Blockbuster Experts try their best to build an immersive world" +
-                            " we need to add even more in post to finish of a video."},
+                            " we need to add even more in post to finish off a video."},
                     {name: "Builder", tag: "Java/PE",
                         description: "Our building department recreates entire worlds block-by-block. " +
                             "Show us your creativity and become a CinemaCraft Builder."},
